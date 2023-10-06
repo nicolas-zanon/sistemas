@@ -1,0 +1,68 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Contatos</title>
+	<link rel="icon" type="png" href="imagem/contato.png">
+	<link rel="stylesheet" href="css.css" type="text/css">
+			<script language="javascript" type="text/javascript">
+		function validar() {
+				var email = form.email.value;
+				var numero = form.numero.value;
+				var nome = form.nome.value;
+				var cidade = form.cidade.value;
+				if (numero == "") {
+					alert ('Por favor, preencha a area obrigatório de numero com o seu numero para que podemos lhe alcancar-lo');
+					form.email.focus();
+				return false;
+				}			
+				if (email == "") {
+					alert ('Por favor, preencha a area obrigatório de email com o seu email para que podemos lhe alcancar-lo');
+					form.numero.focus();
+				return false;
+				}
+
+				if (nome == "") {
+					alert ('Por favor, preencha a area obrigatório de nome com o seu nome para que podemos lhe alcancar-lo');
+					form.nome.focus();
+				return false;
+				}
+				if (cidade == "") {
+					alert ('Por favor, preencha a area obrigatório de nome com o nome da sua cidade para que podemos lhe alcancar-lo');
+					form.cidade.focus();
+				return false;
+				}
+			}
+		</script>
+	</head>
+<body bgcolor="#000e2f">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="software.html">Softwares</a></li>
+                <li><a href="softwarel.html">Software Livre</a></li>
+                <li><a href="softwarep.html">Software Propietario</a></li>
+			    <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+	<br><hr>
+	<main>
+<div class="text-block">
+	<center>	<h1>Contate-se com nosco</h1>
+	
+		<form name="form" action="contacto1.html" method="post">
+				email:<input type="text" name="email"><br>
+				numero:<input type="text" name="numero"><br>
+				nome:<input type="text" name="nome"><br>
+				cidade:<input type="text" name="cidade"><br>
+				<textarea cols="50" rows="10" name="observaçoes">observaçao</textarea><br>
+				<input type="submit" onclick="return validar ()" value="enviar">
+				<input type="reset" name="limpar" value="limpar">
+	</center></div>
+</main><hr>
+    <center><h5> Nicolas Duarte 2023-©Todos os direitos reservados</h5></center>
+ <BR>
+</body>
+</html>
